@@ -1,3 +1,127 @@
 Hi All am JP, 
 
 Now this work can be seen by all. 
+ git config --global --list
+user.name=Jayapriyaravi
+user.email=jayapriya1998chand@gmail.com
+
+
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All
+$ git init
+Initialized empty Git repository in C:/Users/VARUN/Music/JP/Git_Learn_All/.git/
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git add test1.txt
+fatal: pathspec 'test1.txt' did not match any files
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git add textFileNew.txt
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   textFileNew.txt
+
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   textFileNew.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   textFileNew.txt
+
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git add textFileNew.txt
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   textFileNew.txt
+
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git config --global user.name "Jayapriyaravi"
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git config --global user.email "jayapriya1998chand@gmail.com"
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git config --global --list
+user.name=Jayapriyaravi
+user.email=jayapriya1998chand@gmail.com
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ ^C
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$
+TokenKey:
+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
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (master)
+$ git branch -M main
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (main)
+$ git push -u origin main
+remote: Permission to Jayapriyaravi/gitlearnnew.git denied to priyalala.
+fatal: unable to access 'https://github.com/Jayapriyaravi/gitlearnnew.git/': The requested URL returned error: 403
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (main)
+$ git config credential.helper
+manager
+
+VARUN@NAVEEN MINGW64 ~/Music/JP/Git_Learn_All (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 91.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Jayapriyaravi/gitlearnnew.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
